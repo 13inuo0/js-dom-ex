@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>콘텐츠 조작</title>
+  </head>
+  <body>
+    <p id="title">hello, <span style="display: none">Javascript</span></p>
+    <script>
+      const title = document.getElementById("title");
+      console.log(title);
+      console.log(title.textContent); //display none 상관없이 모두 표시 / 요소 노드의 모든 텍스트 접근.
+      console.log(title.innerText); // 웹 상에 표시되는 요소만 표시 / 요소 노드의 모든 텍스트 중에 웹즈라우저에 표시되는 텍스트 접근.
+      console.log(title.innerHTML); // 요소노드의 모든 텍스트 중에 HTML 태그 포함한 텍스트에만 접근.
+    </script>
+  </body>
+</html>
